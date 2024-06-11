@@ -8,10 +8,11 @@ def get_mask_card_number(card_number: str) -> str | None:
 
 def get_mask_account(mask_account: str) -> str | None:
     """Функция маскировки номера счета"""
-    if mask_account.isdigit() and len(mask_account) == 20:
-        return f"**{mask_account[-4::]}"
-    else:
+    if mask_account.isdigit() and len(mask_account) != 20:
         return None
+    else:
+        return f"**{mask_account[-4::]}"
+
 
 
 if __name__ == "__main__":
