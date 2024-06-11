@@ -3,7 +3,7 @@ def get_mask_card_number(card_number: str) -> str | None:
     if not card_number.isdigit() or len(card_number) != 16:
         return None
     else:
-        return f"{card_number[:4]} {card_number[5:7]}** **** {card_number[12:]}"
+        return f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
 
 
 def get_mask_account(mask_account: str) -> str | None:
