@@ -25,10 +25,10 @@ if __name__ == "__main__":
     )
 
 
-def sort_by_date(original_list: list[dict[str, Any]], reverse_list: bool = True) -> list[dict[str, Any]]:
+def sort_by_date(original_list: list[dict[str, Any]], is_reverse_list: bool = True) -> list[dict[str, Any]]:
     """Функция, которая принимает на вход список словарей и возвращает новый список,
     в котором исходные словари отсортированы по убыванию даты"""
-    sorted_list = sorted(original_list, key=lambda d: d["date"], reverse=reverse_list)
+    sorted_list = sorted(original_list, key=lambda d: d["date"], reverse=is_reverse_list)
     return sorted_list
 
 
