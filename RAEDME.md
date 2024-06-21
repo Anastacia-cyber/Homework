@@ -11,3 +11,5 @@ git clone https://github.com/Anastacia-cyber/Homework
 ```
 pip install -r requirements.txt
 ```
+## Тестирование
+Было проведено тестирование программ на выявление ошибок.
