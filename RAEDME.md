@@ -11,3 +11,30 @@ git clone https://github.com/Anastacia-cyber/Homework
 ```
 pip install -r requirements.txt
 ```
+## Тестирование
+Было проведено тестирование программ на выявление ошибок.
+
+### Запуск тестов
+```
+Введите в терминале следующую команду:
+pytest
+```
+
+Покрытие тестами:
+```
+Name                       Stmts   Miss  Cover
+----------------------------------------------
+src\__init__.py                0      0   100%
+src\masks.py                  11      4    64%
+src\processing.py             14      2    86%
+src\widget.py                 15      3    80%
+tests\__init__.py              0      0   100%
+tests\conftest.py             10      0   100%
+tests\test_masks.py            8      0   100%
+tests\test_processing.py       6      0   100%
+tests\test_widget.py           7      0   100%
+----------------------------------------------
+TOTAL                         71      9    87%
+
+TOTAL                         71      9    87%
+```
