@@ -1,4 +1,3 @@
-import src.masks
 from src import masks
 
 
