@@ -22,22 +22,32 @@ pytest
 
 Покрытие тестами:
 ```
+Name                       Stmts   Miss  Cover
+----------------------------------------------
 src\__init__.py                0      0   100%
+src\decorators.py             23      0   100%
 src\generators.py             20      0   100%
 src\masks.py                  11      4    64%
 src\processing.py             14      2    86%
 src\widget.py                 14      3    79%
 tests\__init__.py              0      0   100%
 tests\conftest.py             10      0   100%
+tests\test_decorators.py      14      4    71%
 tests\test_generators.py      23      0   100%
 tests\test_masks.py            8      0   100%
 tests\test_processing.py       6      0   100%
 tests\test_widget.py           7      0   100%
 ----------------------------------------------
-TOTAL                        113      9    92%
+TOTAL                        150     13    91%
+
 
 ```
 ## Новый функционал(24.06.2024)
 * Функция `filter_by_currency` - возвращает итератор, который выдает по очереди операции с заданной валютой
 * Генератор `transaction_descriptions` - возвращает описание каждой операции по очереди
 * Генератор `card_number_generator` - генерирует номера карт в формате XXXX XXXX XXXX XXXX
+
+## Новый функционал(26.06.2024)
+*Добавлен декоратор log, который будет логировать вызов функций-
+обработчиков и результаты их работы. 
+Это поможет отслеживать работу системы и быстро реагировать на возможные ошибки.
